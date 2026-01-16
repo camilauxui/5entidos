@@ -238,15 +238,29 @@ h6,
     background: var(--primary);
     border-color: var(--primary);
 }
-
+/* Banner general (todas las páginas que usen solo .page-header) */
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
+    background: url("../img/banner-default.jpg") center center / cover no-repeat;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, .5);
+/* Banner solo para QUIÉNES SOMOS */
+.page-header.quienes-header {
+    background: url("../img/carousel-2.jpg") center center / cover no-repeat;
 }
+
+.page-header.quehacemos-header {
+    background: url(https://images.unsplash.com/photo-1687436874044-2c593fbf0245?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center / cover no-repeat;
+}
+
+
+.page-header.propuesta-header {
+    background: url(https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center / cover no-repeat;
+}
+
+.page-header.equipo-header {
+    background: url(https://images.unsplash.com/photo-1583468991267-3f068b607ae1?q=80&w=1011&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center / cover no-repeat;
+}
+
 
 
 /*** Facility ***/
